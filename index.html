@@ -49,9 +49,7 @@
 <section class="slide " id="slide-2">
   <div>
     <h2>Understanding Classification in ArcGIS</h2>
-    <blockquote>
-<p><a href="https://pro.arcgis.com/en/pro-app/help/mapping/symbols-and-styles/data-classification-methods.htm">Explanation of automated classification methods in ArcGIS</a></p>
-</blockquote>
+    <p><a href="https://pro.arcgis.com/en/pro-app/help/mapping/symbols-and-styles/data-classification-methods.htm">Explanation of automated classification methods in ArcGIS</a></p>
 
   </div>
 </section>
@@ -71,23 +69,113 @@ Classification:</p>
 </section>
 <section class="slide " id="slide-4">
   <div>
-    <h2>Slide 2</h2>
-    
+    <h2>Unsupervised Classification Algorithms</h2>
+    <blockquote>
+<p>Explanation</p>
+</blockquote>
+
+<p><a href="https://www.youtube.com/watch?v=6R16reLVl3I">Clustering: Basics</a></p>
+
   </div>
 </section>
 <section class="slide " id="slide-5">
   <div>
-    <h2>Slide 2</h2>
-    
+    <h2>Unsupervised Classification Algorithms</h2>
+    <p><a href="https://www.youtube.com/watch?v=_aWzGGNrcic">K-Means</a></p>
+
+<pre><code>+ PRO: Entire feature space can be classified
++ CONTRA: Description of cluster determined by radial shape, starting points must be selected as cluster center
+</code></pre>
+
   </div>
 </section>
 <section class="slide " id="slide-6">
   <div>
-    <h2>Slide 2</h2>
-    
+    <h2>Hierarchical Clustering</h2>
+    <p><a href="https://www.youtube.com/watch?v=OcoE7JlbXvY">Hierarchical Clustering</a>
+Hierarchical clustering creates a <a href="http://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Hierarchical_Clustering-Dendrograms.pdf">Dendrogram</a> which is a tree diagram. It shows the euklidian distance between data points. The Dendrogram can be used to decide how many clusters you want to create. You can choose between different possibilities to define the distance between clusters:</p>
+
+<pre><code>  + Single link = Minimal euklidian distance
+  + Average link = Average euklidian distance
+  + Complete link = Maximum euklidian distance
+</code></pre>
+
   </div>
 </section>
 <section class="slide " id="slide-7">
+  <div>
+    <h2>Mixture of Gaussian</h2>
+    <p><a href="https://www.youtube.com/watch?v=qMTuMa86NzU">Mixture of Gaussian</a></p>
+
+<hr>
+
+<h1>Supervised Classification Algorithms</h1>
+
+<blockquote>
+<p>Explanation</p>
+</blockquote>
+
+  </div>
+</section>
+<section class="slide " id="slide-8">
+  <div>
+    <h2>Naive Bayes</h2>
+    <p><a href="https://www.youtube.com/watch?v=OqmJhPQYRc8">Naive Bayes</a>
+PROBLEM: Classes often overlap
+IDEA of Naive Bayes Theorem: Probability maximisation of correct classification of each data point
+GIVEN PARAMETER:</p>
+
+<pre><code>+ A-priori probability that each data point is realated to a specific class 
++ Feature probability that one data point within a specific class has a specific feature vector
+</code></pre>
+
+  </div>
+</section>
+<section class="slide " id="slide-9">
+  <div>
+    <h2>Maximum Likelihood</h2>
+    <ul>
+<li><a href="https://www.youtube.com/watch?v=RPtYRm2tboA">Maximum Likelihood Classification: Used if a-priori probability isn&#39;t given</a></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-10">
+  <div>
+    <h2>K-nn</h2>
+    <p><a href="https://www.youtube.com/watch?v=k_7gMp5wh5A">K-nn = K-nearest neighbor</a></p>
+
+<p>A <a href="http://www.pi6.fernuni-hagen.de/downloads/publ/tr198.pdf">Voronoi Diagramm</a> decribes areas, that are nearest to a certain data point (within a defined distance)
+1. For the k-nn classification you choose an uneven number of neighbors=k
+2. The algorithm starts at a random point
+3. This starting point gets the value that most appears in the &quot;neighborhood&quot; (for that reason k should always be uneven)</p>
+
+<pre><code>+ PRO: Easy concept
++ CONTRA: Distance parameter often difficult
+</code></pre>
+
+  </div>
+</section>
+<section class="slide " id="slide-11">
+  <div>
+    <h2>Support Vector Machines (SVM)</h2>
+    <p><a href="https://www.youtube.com/watch?v=1NxnPkZM9bc">Support Vektor Machines (SVM)</a></p>
+
+<pre><code>+ PRO: Unlinear classification possible, less parameter required, no a-priori knowledge required, applicable for large feature space
++ CONTRA: Slow classification 
+</code></pre>
+
+  </div>
+</section>
+<section class="slide " id="slide-12">
+  <div>
+    <h2>Support Vector Machines (SVM)</h2>
+    <p><a href="https://www.youtube.com/watch?v=ix6IvwbVpw0">AdaBoost</a>
+is a combination of multiple weak classifiers to build one strong classifier</p>
+
+  </div>
+</section>
+<section class="slide " id="slide-13">
   <div>
     <h2>NA</h2>
     
