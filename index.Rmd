@@ -1,4 +1,4 @@
----
+slidify---
 title       : 
 subtitle    : 
 author      : 
