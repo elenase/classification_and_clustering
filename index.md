@@ -1,4 +1,4 @@
-slidify---
+---
 title       : Classification and Clustering
 subtitle    : 
 author      : Elena Seydel

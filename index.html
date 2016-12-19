@@ -1,202 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Classification and Clustering</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<meta name="description" content="Classification and Clustering">
+	<meta name="author" content="Elena Seydel">
+	<meta name="generator" content="slidify" />
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" media="print"
+	  href="libraries/frameworks/shower/themes/ribbon/styles/print.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css">  <link rel="stylesheet" href = "assets/css/ribbons.css">
 
-<title>knit        : slidify::knit2slides</title>
-
-<script type="text/javascript">
-window.onload = function() {
-  var imgs = document.getElementsByTagName('img'), i, img;
-  for (i = 0; i < imgs.length; i++) {
-    img = imgs[i];
-    // center an image if it is the only element of its parent
-    if (img.parentElement.childElementCount === 1)
-      img.parentElement.style.textAlign = 'center';
-  }
-};
-</script>
-
-
-
-
-
-<style type="text/css">
-body, td {
-   font-family: sans-serif;
-   background-color: white;
-   font-size: 13px;
-}
-
-body {
-  max-width: 800px;
-  margin: auto;
-  padding: 1em;
-  line-height: 20px;
-}
-
-tt, code, pre {
-   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
-}
-
-h1 {
-   font-size:2.2em;
-}
-
-h2 {
-   font-size:1.8em;
-}
-
-h3 {
-   font-size:1.4em;
-}
-
-h4 {
-   font-size:1.0em;
-}
-
-h5 {
-   font-size:0.9em;
-}
-
-h6 {
-   font-size:0.8em;
-}
-
-a:visited {
-   color: rgb(50%, 0%, 50%);
-}
-
-pre, img {
-  max-width: 100%;
-}
-pre {
-  overflow-x: auto;
-}
-pre code {
-   display: block; padding: 0.5em;
-}
-
-code {
-  font-size: 92%;
-  border: 1px solid #ccc;
-}
-
-code[class] {
-  background-color: #F8F8F8;
-}
-
-table, td, th {
-  border: none;
-}
-
-blockquote {
-   color:#666666;
-   margin:0;
-   padding-left: 1em;
-   border-left: 0.5em #EEE solid;
-}
-
-hr {
-   height: 0px;
-   border-bottom: none;
-   border-top-width: thin;
-   border-top-style: dotted;
-   border-top-color: #999999;
-}
-
-@media print {
-   * {
-      background: transparent !important;
-      color: black !important;
-      filter:none !important;
-      -ms-filter: none !important;
-   }
-
-   body {
-      font-size:12pt;
-      max-width:100%;
-   }
-
-   a, a:visited {
-      text-decoration: underline;
-   }
-
-   hr {
-      visibility: hidden;
-      page-break-before: always;
-   }
-
-   pre, blockquote {
-      padding-right: 1em;
-      page-break-inside: avoid;
-   }
-
-   tr, img {
-      page-break-inside: avoid;
-   }
-
-   img {
-      max-width: 100% !important;
-   }
-
-   @page :left {
-      margin: 15mm 20mm 15mm 10mm;
-   }
-
-   @page :right {
-      margin: 15mm 10mm 15mm 20mm;
-   }
-
-   p, h2, h3 {
-      orphans: 3; widows: 3;
-   }
-
-   h2, h3 {
-      page-break-after: avoid;
-   }
-}
-</style>
-
-
-
+	<!--
+		To apply styles to the certain slides
+		use slide ID to get needed elements
+		-->
+	<style>
+		#Cover h2 {
+      margin:65px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+		#FitToWidth h2,
+		#FitToHeight h2 {
+			color:#FFF;
+			text-align:center;
+			}
+	</style> 
 </head>
-
-<body>
-<p>slidify&mdash;
-title       : Classification and Clustering
-subtitle    : 
-author      : Elena Seydel
-job         : 
-framework   : shower        # {io2012, html5slides, shower, dzslides, &hellip;}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}</p>
-
-<h2>knit        : slidify::knit2slides</h2>
-
-<h1>General Information about Classification and Clustering</h1>
-
-<blockquote>
+<body class="list">
+  <header class="caption">
+  	<h1>Classification and Clustering</h1>
+	</header>
+  <section class="slide " id="slide-1">
+  <div>
+    <h2>General Information about Classification and Clustering</h2>
+    <blockquote>
 <p>Classification is a major step in creating maps. Behind every classification mechanism (that might be done automatically by most GIS Software) a complex mathematical algorithm is used.</p>
 
 <p>Regarding to which classification algorithm you choose the product will look totally different as the data breaks between the classes change. To decide which classification is the best you should understand what happens behind.</p>
 </blockquote>
 
-<hr/>
-
-<h2>Understanding Classification in ArcGIS</h2>
-
-<blockquote>
+  </div>
+</section>
+<section class="slide " id="slide-2">
+  <div>
+    <h2>Understanding Classification in ArcGIS</h2>
+    <blockquote>
 <p><a href="https://pro.arcgis.com/en/pro-app/help/mapping/symbols-and-styles/data-classification-methods.htm">Explanation of automated classification methods in ArcGIS</a></p>
 </blockquote>
 
-<hr/>
-
-<h2>Classification and Clustering</h2>
-
-<p>Clustering:
+  </div>
+</section>
+<section class="slide " id="slide-3">
+  <div>
+    <h2>Classification and Clustering</h2>
+    <p>Clustering:
 Classification:</p>
 
 <blockquote>
@@ -205,20 +67,42 @@ Classification:</p>
 2. Unsupervised Classification</p>
 </blockquote>
 
-<hr/>
-
-<h2>Slide 2</h2>
-
-<hr/>
-
-<h2>Slide 2</h2>
-
-<hr/>
-
-<h2>Slide 2</h2>
-
-<hr/>
-
+  </div>
+</section>
+<section class="slide " id="slide-4">
+  <div>
+    <h2>Slide 2</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-5">
+  <div>
+    <h2>Slide 2</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-6">
+  <div>
+    <h2>Slide 2</h2>
+    
+  </div>
+</section>
+<section class="slide " id="slide-7">
+  <div>
+    <h2>NA</h2>
+    
+  </div>
+</section>
+  <div class="progress">
+    <div></div>
+  </div>
+	<script src="libraries/frameworks/shower/shower.js"></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+		<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
 </body>
-
 </html>
